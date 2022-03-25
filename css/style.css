@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    background: url('https://i.pinimg.com/736x/3c/de/32/3cde3207bf0cb55828a5ac83f69f434c.jpg') no-repeat;
+    background-size: cover;
+
+}
+
+main{
+    width: 60%;
+    margin: auto;
+    padding: 80px 0;
+    background-color: rgb(240, 248, 255);
+}
+
+header{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aqua;
+    color: white;
+    text-align: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+
+
+section form ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+section h3{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+section form label{
+    font-size: 22px;
+}
+
+section{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+section button{
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 10px;
+}

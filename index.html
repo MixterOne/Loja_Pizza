@@ -4,9 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>BarracaDasPizzas</title>
+    <script src="js/script.js" defer></script>
+    <script src="js/tableToExcel.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>BarracaDasPizzas</h1>
+        <h2>Vendas de Pizzas</h2>
+    </header>
+    <main>
+        <section>
+            <form>
+                <h3>Escolha a sua Pizza</h3>
+                <ul>
+                    <li>
+                        <input type="radio" class="mussarela" name="pizzas">
+                        <label for="mussarela">Mussarela</label>
+                    </li>
+                    <li>
+                        <input type="radio" class="quatroQueijos" name="pizzas">
+                        <label for="quatroQueijos">Quatro Queijos</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="pizzas" class="moda">
+                        <label for="moda">Moda</label>
+                    </li>
+                </ul>
+            </form>
+        </section>
+    
+        <section>
+            <button class="vendas">Vendas</button>
+            <button class="estorno">Estorno</button>
+        </section>
+    
+        <section id="table">
+            <table>
+                <tr>
+                    <th>Sabores</th>
+                    <th>Quantidade</th>
+                    <th>Valores</th>
+                </tr>
+                <tr>
+                    <td>Mussarela</td>
+                    <td class="resultadoMussarela"></td>
+                    <td class="valorMussarela"></td>
+                </tr>
+                <tr>
+                    <td>Quatro Queijo</td>
+                    <td class="resultadoQuatroQueijo"></td>
+                    <td class="valorQuatroQueijo"></td>
+                </tr>
+                <tr>
+                    <td>Moda</td>
+                    <td class="resultadoModa"></td>
+                    <td class="valorModa"></td>
+                </tr>
+            </table>
+        </section>
+    
+        <section>
+            <button class="export">
+                Planilha
+            </button>
+        </section>
+    </main>
     
 </body>
 </html>

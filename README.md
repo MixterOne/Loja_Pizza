@@ -8,5 +8,5 @@
   <li>CSS</li>
   <li>JAVASCRIPT</li>
 </ul
-  <img src="ImgReadMe.jpeg">
+  <img src="ImgReadMe.jpeg"></img>
   

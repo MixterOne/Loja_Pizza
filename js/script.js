@@ -21,9 +21,10 @@ btnPlanilha.addEventListener('click', planilha);
 
 function venda(e){
     if(document.querySelector('.mussarela').checked){
+        
         somaMussarela = somaMussarela + 1;
         vendaMussarela = vendaMussarela + 30.00;
-
+        
         document.querySelector('.resultadoMussarela').innerHTML = somaMussarela
         document.querySelector('.valorMussarela').innerHTML = vendaMussarela.toFixed(2)
     }else if(document.querySelector('.quatroQueijos').checked){
@@ -78,5 +79,5 @@ function estorno(e){
 }
 
 function planilha(e){
-    
+    TableToExcel.convert(document.getElementById('table'));
 }
